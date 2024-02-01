@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    <script src="https://kit.fontawesome.com/3e3fac7f5e.js" crossorigin="anonymous"></script>   
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo.jpg">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/Nik.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>   <!-- for clicking on menu making the website scrollable-->
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact & Resume</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm <span>Nikhil</span> Shrirao  </h1>
+                <p>Web Developer</p> <br>
+                <h3>Currently Pursuing B.E From <span>PICT, Pune</span> in Computer Engineering</h3> 
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------HTML for About Section in the Website---------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">  
+                    <!-- second person image -->
+                    <img src="assets/Nikhilshrirao_photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name Nikhil Sunil Shrirao.I am Persuing my Engineering in Computer Engineering stream.I completed my 12th from my home village warud and tenth from same village.I scored 95 percentage in my 12th and 89.20% in 10th.I secured the rank 431 in MHT-CET Entrance exam 2021 and scored 93.05%tile in JEE-Mains 2021.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span>:<br>• C++   • Javascript</li>
+                            <li><span>Web Development</span>: <br>
+                            •HTML       • CSS       • ReactJS <br>
+                            •NodeJS     • Express.js
+                            • MongoDB</li>
+                            <li><span>Database</span>:<br>
+                            • MySQL <br>
+                            • MongoDB</li>
+                            <li><span>Developer Tools</span>: <br>
+                            •Git      •GitHub <br>
+                            • VS Code • Postman </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Completed SSC Class 10th<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;89.20%</span></li>
+                            <li><span>2021</span><br>Completed HSC class 12th <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;95%</span></li>
+                            <li><span>2021-25</span><br>Persuing BE in Computer Engineering Branch from PICT, Pune <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.05 CGPA</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------Portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/back.jpg" >
+                    <div class="layer">
+                        <h3>Contact Manager</h3>
+                        <p>Made by using <b>React, Semantic UI, Axios, Node.js, Express, MongoDB</b></p><br>
+                        <p>Developed a Contact Manager application using MERN, which
+                            allowsusers to organize and store their contacts.</p>
+
+                        <br>
+                        <p> Implemented essential features such as adding, deleting, editing, 
+                            and searching contacts, allowing users to manage their contacts
+                            efficiently
+                        </p>
+                        <a href="https://contact-manager-mern.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/background.jpg" >
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>Made by using <b>HTML,CSS and JS.</b></p>
+                        <p>I made this website in which the quiz are taken.</p> <br>
+                        <p>In this user can attempt the quiz and at last get the result in the form of how many questions are correct out of the total questions.</p>
+                        <a href="https://dailyfunkrunal.blogspot.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/top-line-management-login-background-1.jpg" >
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Made by using <b>HTML,CSS and JS.</b></p>
+                        <p>In this game the user can play the tic tac toe game with group of two  which will give result at last after all blocks are filled</p>
+                        <a href="https://dailyfunnikhil.blogspot.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.google.com/search?q=list+of+the+all+domains+related+with+computer+csience+feild&rlz=1C1UEAD_enIN1036IN1036&oq=list+of+the+all+domains+related+with+computer+csience+feild&aqs=chrome..69i57j33i10i160.24724j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------------------contact form -------------------->
+    <div id="contact" style="background: rgb(200, 177, 177);">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me & Resume</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shriraonikhil340@gmail.com.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8432070944</p>
+                    <div class="social-icons">  <!-- Adding the social media icons insta,face,linkedin,-->
+                        <a href="https://www.facebook.com/profile.php?id=100084793694791" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>  <!--face-->
+                        <a href="https://twitter.com/nikhilshri2004" target="_blank"><i class="fa-brands fa-twitter fa-beat"></i></a>     <!-- twitter-->
+                        <a href="https://www.instagram.com/nikhil252004/" target="_blank"><i class="fa-brands fa-instagram"></i></a>     <!--insta-->
+                        <a href="https://www.linkedin.com/in/nikhil-shrirao-94593b234" target="_blank"><i class="fa-brands fa-linkedin"></i></a>     <!--linked-->
+                    </div>
+                    <a href="Nikhil Shrirao Resume (2).pdf" download class="btn btn2">Download Resume</a>    <!--Adding the file path for downloading the cv-->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">   <!-- message copied here from the contact form details in google sheet-->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" requi+red>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nikhil</p>
+        </div>
+    </div>
+    <style>
+        #header{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .container{
+            padding: 10px 10%;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo{
+            width: 140px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+            font-weight: bold;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;  
+            /* maked it 0 after hovering it line will visible */
+            height: 3px;
+            background: #f30404;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        .header-text{
+            margin-top: 15%;
+            font-size: 30px;
+        }
+        .header-text p{
+            font-weight: bold;
+        }
+        .header-text h1{
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .header-text h1 span{
+            color: hsl(341, 94%, 49%);
+        }
+    </style>
+</body>
+</html>
+    
+
+
+
+
+
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu=document.getElementById('sidemenu')
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+// const scriptURL = '<SCRIPT URL>'   //adding the url that get from appscript in place of SCRIPT URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzHSMm0qPm083A_ob5ausekMoqePa89oqsQbi4iV0-XO_xBJWL73loiGcxgAaEq3YzxiQ/exec'
+const form = document.forms['submit-to-google-sheet']
+
+const msg=document.getElementById("msg")
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
